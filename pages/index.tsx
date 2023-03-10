@@ -3,11 +3,12 @@ import Image from 'next/image';
 import { Box, Grid, ButtonBase } from '@mui/material';
 import styles from '@/styles/Home.module.css';
 import { SetStateAction, useState } from 'react';
-import SearchBar from './components/SeacrhBar';
-import PaginationM from './components/PaginationMaterial';
-import MovieContainer from './components/MovieContainer';
-import AppLink from './components/AppLink';
+import SearchBar from '../components/SeacrhBar';
+import PaginationM from '../components/PaginationMaterial';
+import MovieContainer from '../components/MovieContainer';
+import AppLink from '../components/AppLink';
 import React from 'react';
+import Link from 'next/link';
 
 export default function Home() {
   const [searchData, setSearchData] = useState<{ imdbID: string }[]>([]);

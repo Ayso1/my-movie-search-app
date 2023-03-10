@@ -3,7 +3,7 @@ import { CardHeader, CardMedia, Theme, Box } from '@mui/material';
 import styles from '../../styles/MoviePage.module.css';
 import React, { FC, useState, useEffect } from 'react';
 import axios from 'axios';
-import config from '../components/config';
+import config from '../../components/config';
 import { useLocation } from 'react-router-dom';
 import { Card, CardOverflow, CardContent, AspectRatio } from '@mui/joy';
 
@@ -65,14 +65,14 @@ export default function MoviePage() {
           />
 
           <CardContent sx={{ px: 12 }}>
-            <Typography sx={{ mb: 2, color: '#000000' }} variant="h4">
+            <Typography sx={{ mb: 2, color: '#eee' }} variant="h4">
               {data.Title}
             </Typography>
-            <Typography sx={{ mb: 2, color: '#000000' }} variant="body1">
+            <Typography sx={{ mb: 2, color: '#eee' }} variant="body1">
               <strong>Release Date: </strong>
               {data.Released}
             </Typography>
-            <Typography sx={{ mb: 2, color: '#000000' }} variant="body1">
+            <Typography sx={{ mb: 2, color: '#eee' }} variant="body1">
               <strong>Country: </strong>
               {data.Country}
             </Typography>
@@ -80,19 +80,19 @@ export default function MoviePage() {
               <strong>Rated: </strong>
               {data.Rated}
             </Typography>
-            <Typography sx={{ mb: 2, color: '#000000' }} variant="body1">
+            <Typography sx={{ mb: 2, color: '#eee' }} variant="body1">
               <strong>Genre: </strong>
               {data.Genre}
             </Typography>
-            <Typography sx={{ mb: 2, color: '#000000' }} variant="body1">
+            <Typography sx={{ mb: 2, color: '#eee' }} variant="body1">
               <strong>Director: </strong>
               {data.Director}
             </Typography>
-            <Typography sx={{ mb: 2, color: '#000000' }} variant="body1">
+            <Typography sx={{ mb: 2, color: '#eee' }} variant="body1">
               <strong>Actors: </strong>
               {data.Actors}
             </Typography>
-            <Typography sx={{ mb: 2, color: '#000000' }} variant="body1">
+            <Typography sx={{ mb: 2, color: '#eee' }} variant="body1">
               <strong>Plot: </strong>
               {data.Plot}
             </Typography>

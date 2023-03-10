@@ -1,7 +1,7 @@
 import React from 'react';
 import Pagination from '@mui/material/Pagination';
 import { Grid } from '@mui/material';
-import styles from '../../styles/pagination.module.css';
+import styles from '../styles/pagination.module.css';
 
 const PaginationM = ({
   postsPerPage,
